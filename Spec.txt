@@ -1,0 +1,6 @@
+Main function:
+1, Danh sách xem video hướng dẫn viết CV phân loại theo từng ngành nghề
+2, Danh sách xem video hướng dẫn chuẩn bị phỏng vấn 
+=> 2 cái danh sách xem này phía dưới sẽ có description (như trong figma, phần vid phỏng vấn ko cần phần luyện tập)
+3, Xây dựng ngân hàng câu hỏi phân loại theo như figma (muốn xem đáp án cần trả phí- gói premium: 49k/tháng)
+4, Review công ty (muốn review thì phải xác thực là đã từng làm việc ở đó (giấy thực tập, hợp đồng lao động...), nếu mà phát hiện bất thường do có report => admin sẽ xem xét rồi phản hồi xem là có xóa review đó hay ko) muốn sử dụng tính năng review và xem review công ty thì phải mua gói premium: 49k/tháng

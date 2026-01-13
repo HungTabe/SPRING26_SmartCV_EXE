@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCV Startup Summary</title>
+    <style>
+        /* Base Styles */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 15px; 
+            background-color: #f4f7f6; 
+        }
+        
+        header { 
+            background: #1e3a8a; 
+            color: #fff; 
+            padding: 2.5rem 1rem; 
+            border-radius: 8px; 
+            text-align: center; 
+            margin-bottom: 20px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1 { margin: 0; font-size: 2.8rem; letter-spacing: -1px; }
+        .tagline { font-style: italic; color: #bfdbfe; font-size: 1.2rem; margin-top: 10px; }
+        
+        section { 
+            background: #fff; 
+            padding: 25px; 
+            margin-bottom: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+        }
+        
+        h2 { color: #1e3a8a; border-bottom: 3px solid #3b82f6; padding-bottom: 10px; margin-top: 0; display: flex; align-items: center; gap: 10px; }
+        
+        /* Responsive Grid for Business Model Canvas */
+        .grid-container { 
+            display: grid; 
+            grid-template-columns: repeat(5, 1fr); 
+            grid-template-rows: repeat(2, auto);
+            gap: 15px; 
+        }
+        
+        .bmc-box { 
+            border: 1px solid #e5e7eb; 
+            padding: 15px; 
+            border-radius: 8px; 
+            background: #ffffff; 
+            transition: all 0.2s;
+        }
+
+        .bmc-box:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+        }
+        
+        .bmc-box h3 { 
+            margin-top: 0; 
+            font-size: 1rem; 
+            color: #2563eb; 
+            border-bottom: 1px solid #f3f4f6; 
+            padding-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .highlight { font-weight: bold; color: #1d4ed8; }
+        ul { padding-left: 18px; margin: 10px 0; }
+        li { margin-bottom: 8px; font-size: 0.95rem; }
+        
+        /* Table Responsiveness */
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; min-width: 600px; background: white; }
+        th, td { border: 1px solid #e5e7eb; padding: 15px; text-align: left; }
+        th { background-color: #f8fafc; color: #1e3a8a; font-weight: 700; }
+        tr:nth-child(even) { background-color: #f9fafb; }
+        
+        .footer { text-align: center; font-size: 0.9rem; color: #64748b; margin-top: 40px; padding: 20px; border-top: 1px solid #e2e8f0; }
+
+        /* Tablet View */
+        @media (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Mobile View */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .tagline { font-size: 1rem; }
+            section { padding: 20px; }
+            .grid-container { grid-template-columns: 1fr; }
+            .bmc-box { grid-column: span 1 !important; grid-row: auto !important; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SmartCV</h1>
+    <p class="tagline">“Bridge the gap between education and career.”</p>
+</header>
+
+<section id="introduction">
+    <h2>1. Startup Core Idea</h2>
+    <p><strong>SmartCV</strong> is an intelligent ecosystem designed for final-year students and fresh graduates (0-3 years experience). It focuses on enhancing candidate quality through a <strong>"Learn – Do – Share"</strong> model.</p>
+    <ul>
+        <li><span class="highlight">Mission:</span> To provide students with a comprehensive, reputable toolkit to master their first professional recruitment journey.</li>
+        <li><span class="highlight">Vision:</span> To become the leading career preparation platform for the Vietnamese youth economy.</li>
+        <li><span class="highlight">Problem Solved:</span> Addresses the lack of industry-specific CV guidance, robotic interview prep tools, and the absence of verified company culture insights for entry-level roles.</li>
+    </ul>
+</section>
+
+<section id="bmc">
+    <h2>2. Business Model Canvas (BMC)</h2>
+    <div class="grid-container">
+        <!-- Key Partners -->
+        <div class="bmc-box" style="grid-row: span 2;">
+            <h3>Key Partners</h3>
+            <ul>
+                <li>Universities & Career Centers</li>
+                <li>HR Professionals & Mentors</li>
+                <li>Partner Businesses (verified recruiters)</li>
+                <li>Social Media Influencers (Education niche)</li>
+            </ul>
+        </div>
+        
+        <!-- Key Activities -->
+        <div class="bmc-box">
+            <h3>Key Activities</h3>
+            <ul>
+                <li>Curating Industry-specific Video Content</li>
+                <li>Developing Interview Question Banks</li>
+                <li>Verification of Company Reviews</li>
+                <li>Platform Technical Maintenance</li>
+            </ul>
+        </div>
+        
+        <!-- Value Propositions -->
+        <div class="bmc-box" style="grid-row: span 2;">
+            <h3>Value Propositions</h3>
+            <ul>
+                <li>Industry-specific CV Writing Guides</li>
+                <li>Psychology-based Interview Training</li>
+                <li>Verified Company Culture Reviews</li>
+                <li>Inclusive "Learn-Do-Share" Ecosystem</li>
+            </ul>
+        </div>
+        
+        <!-- Customer Relationships -->
+        <div class="bmc-box">
+            <h3>Customer Relationships</h3>
+            <ul>
+                <li>Personalized CV Feedback</li>
+                <li>Active Community Support</li>
+                <li>Gamification (Badges for progress)</li>
+            </ul>
+        </div>
+        
+        <!-- Customer Segments -->
+        <div class="bmc-box" style="grid-row: span 2;">
+            <h3>Customer Segments</h3>
+            <ul>
+                <li><strong>Primary:</strong> Final-year Students</li>
+                <li><strong>Secondary:</strong> Fresh Graduates (0-3 years experience)</li>
+                <li><strong>B2B:</strong> HR Departments looking for quality entry-level talent</li>
+            </ul>
+        </div>
+        
+        <!-- Key Resources -->
+        <div class="bmc-box">
+            <h3>Key Resources</h3>
+            <ul>
+                <li>Verified Review Database</li>
+                <li>HR Question Bank & Solutions</li>
+                <li>AI Content Delivery System</li>
+            </ul>
+        </div>
+        
+        <!-- Channels -->
+        <div class="bmc-box">
+            <h3>Channels</h3>
+            <ul>
+                <li>Main Website (SmartCV.app)</li>
+                <li>TikTok (Quick Career Tips)</li>
+                <li>Facebook/LinkedIn Communities</li>
+                <li>University Partnership Events</li>
+            </ul>
+        </div>
+        
+        <!-- Cost Structure -->
+        <div class="bmc-box" style="grid-column: span 2.5;">
+            <h3>Cost Structure</h3>
+            <ul>
+                <li>Server & Infrastructure Costs</li>
+                <li>Content Production (Video/Graphic)</li>
+                <li>Review Verification Operations</li>
+                <li>Marketing & User Acquisition</li>
+            </ul>
+        </div>
+        
+        <!-- Revenue Streams -->
+        <div class="bmc-box" style="grid-column: span 2.5;">
+            <h3>Revenue Streams</h3>
+            <ul>
+                <li>Freemium Subscription (Monthly/Yearly)</li>
+                <li>Premium 1:1 CV Mentor Review</li>
+                <li>Corporate Recruitment Branding Fees</li>
+                <li>Affiliate Educational Courses</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="pricing">
+    <h2>3. Target Value to Customer</h2>
+    <p>SmartCV offers tiered access to ensure every student can start their journey, regardless of their budget.</p>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature Pillar</th>
+                    <th>Detail Offering</th>
+                    <th>Core Value Benefit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Interview Training</strong></td>
+                    <td>Video series on psychology & body language + Question Bank</td>
+                    <td>Builds confidence and reduces anxiety for first-time interviewees.</td>
+                </tr>
+                <tr>
+                    <td><strong>Verified Reviews</strong></td>
+                    <td>Reviews verified via Student ID/Internship Contracts</td>
+                    <td>Provides transparent, trustworthy insights into work environments.</td>
+                </tr>
+                <tr>
+                    <td><strong>Community Hub</strong></td>
+                    <td>Personalized feedback from HR experts & Peer sharing</td>
+                    <td>Turns the lonely job-hunting process into a collaborative experience.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="investment">
+    <h2>4. Why SmartCV Stands Out?</h2>
+    <ul>
+        <li><strong>High Trust Mechanism:</strong> Unlike general review sites, our reviews require verification (Student ID/Invoices), solving the problem of fake feedback.</li>
+        <li><strong>Industry Verticality:</strong> Guides are not generic; they are tailored specifically for Design, IT, Marketing, and Finance.</li>
+        <li><strong>Integrated Ecosystem:</strong> We move the user from passive learning (watching videos) to active practice (question banks) and finally to real-world sharing (blog).</li>
+    </ul>
+</section>
+
+<div class="footer">
+    <p>Project Plan Summary - SmartCV Startup - Group Recap IS1806</p>
+</div>
+
+</body>
+</html>
